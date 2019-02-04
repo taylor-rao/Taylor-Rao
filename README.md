@@ -16,7 +16,11 @@ Scikit-learn does not allow for building models with categorical data In the cel
 
 In ln[14] - ln[24] I then split the data into testing and training data and tested the accuract of various machine learning algorithms for predicting 'pitchCall'. I observed the the tree based algorithms performed much better than the regression based ones.
 
-My goal at this time was to build a model using a small subset of variables without sacrificing much in the way of accuracy. I then wrote a graph the used forward selection to select subsets of size 1 - 10 and display the variable selected and the accuracy of a model with that and all previous variables included. 
+My goal at this time was to build a model using a small subset of variables without sacrificing much in the way of accuracy. I then wrote a program that uses forward selection to select subsets of size 1 - 10 and display the variable selected as well as the accuracy of a model with that and all previous variables included. This is demonstrated in ln[26] - ln[28]. Keep in mind that for all three of these models, the first column represents the accuracy of a model that picks the most likely outcoms (BallCalled) every time. The second column in all three of these models is the model built with only 'Batter' as a predictor variable.
+
+By looking at the above plots, I decided to select the random forest model with 'baters', 'plateLocSide', 'PlateLocHeight', 'TaggedPitchType', and 'VertRelAngle' as my predictor variables. I then built a program where the user enters values for these variables (other than bater), and the program outputs the liklihood of each result for each player. This is ln [36].
+
+
 
 
 
