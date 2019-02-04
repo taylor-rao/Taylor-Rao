@@ -1,6 +1,6 @@
 #Capstone
 
-The dataset I used was given to me by the statistics department who got it from the A&M baseball team.
+The dataset I used was given 'origional_game_data.xlsx' to me by the statistics department who got it from the A&M baseball team.
 
 My goal with this project was for coaches of A&M's baseball team to be able to use scouting reports to determine which of their batters to match up against which of the oposing team's pitchers.
 
